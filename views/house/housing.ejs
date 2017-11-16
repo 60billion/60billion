@@ -2,8 +2,58 @@
   <head>
     <meta charset="utf-8">
     <%- include('../parts/bootstrap.ejs'); %>
+    <%- include('../parts/css.ejs'); %>
+
   </head>
   <body>
-<h1>House</h1>
+    <div class="container-fluid">
+
+      <!-- first row (top1+search) -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><%- include('../parts/top1.ejs'); %></div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <!-- second row(top2) -->
+      <div class="row">
+        <hr/>
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><%- include('../parts/top2.ejs'); %></div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <!-- third row(filter+list+map) -->
+      <div class="row">
+        <hr/>
+        <div class="col-md-2"></div>
+
+
+        <div class="col-md-8">
+
+
+          <div class="col-md-7">
+            <!-- filter position -->
+            <div class="row"><%- include('../house/housingBar.ejs'); %><hr/></div>
+            <!-- list position -->
+            <div class="row"></div>
+          </div>
+
+           <!-- map position -->
+          <div class="col-md-5"></div>
+        </div>
+
+
+        <div class="col-md-2"></div>
+      </div>
+
+      <!-- fourth row(bottom) -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"></div>
+        <div class="col-md-2"></div>
+      </div>
+
+    </div>
   </body>
 </html>
