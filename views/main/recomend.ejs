@@ -1,53 +1,42 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <%- include('../parts/bootstrap.ejs'); %>
     <%- include('../parts/css.ejs'); %>
+    <%- include('../parts/js.ejs'); %>
   </head>
   <body>
     <div class="container-fluid">
 
       <!-- first row -->
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8"><%- include('../parts/top1.ejs'); %></div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <!-- Second Row -->
-      <div class="row">
-        <hr/>
-        <div class="col-md-2"></div>
-        <div class="col-md-8"><%- include('../parts/top2.ejs'); %></div>
-        <div class="col-md-2"></div>
-      </div>
+      <div class="row"><%- include('../parts/top1.ejs'); %></div>
 
       <!-- Third Row(houseList) -->
-      <div class="row">
-        <hr/>
+      <div class="row" style="margin-top:60px">
         <div class="col-md-2"></div>
-        <div class="col-md-8"><%- include('../parts/houseSampleList.ejs'); %></div>
+        <div class="col-md-8"><h3>추천 숙소 리스트</h3><%- include('../parts/houseSampleList.ejs'); %></div>
         <div class="col-md-2"></div>
       </div>
 
       <!-- Fourth Row (jobList) -->
       <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8"><hr/><%- include('../parts/jobSampleList.ejs'); %></div>
+        <div class="col-md-8"><hr/><h2>추천 구인 리스트</h2><%- include('../parts/jobSampleList.ejs'); %></div>
         <div class="col-md-2"></div>
       </div>
 
       <!-- fifth Row (saleList) -->
       <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8"><hr/><%- include('../parts/saleSampleList.ejs'); %></div>
+        <div class="col-md-8"><hr/><h2>추천 사고팔고</h2><%- include('../parts/saleSampleList.ejs'); %></div>
         <div class="col-md-2"></div>
       </div>
 
       <!-- sixth Row (infoList) -->
       <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8"><hr/><%- include('../parts/infoSampleList.ejs'); %></div>
+        <div class="col-md-8"><hr/><h2>지식공유</h2><%- include('../parts/infoSampleList.ejs'); %></div>
         <div class="col-md-2"></div>
       </div>
 

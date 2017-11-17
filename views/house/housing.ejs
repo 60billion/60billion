@@ -1,59 +1,59 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <%- include('../parts/bootstrap.ejs'); %>
     <%- include('../parts/css.ejs'); %>
-
+    <%- include('../parts/js.ejs'); %>
   </head>
   <body>
     <div class="container-fluid">
 
-      <!-- first row (top1+search) -->
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8"><%- include('../parts/top1.ejs'); %></div>
-        <div class="col-md-2"></div>
-      </div>
+      <!-- first row -->
+      <div class="row"><%- include('../parts/top1.ejs'); %></div>
 
-      <!-- second row(top2) -->
-      <div class="row">
-        <hr/>
-        <div class="col-md-2"></div>
-        <div class="col-md-8"><%- include('../parts/top2.ejs'); %></div>
-        <div class="col-md-2"></div>
-      </div>
+      <!-- Third Row(houseList) -->
+      <div class="row" style="margin-top:70px;">
+        <div class="col-md-7">
+          <div class="row" style=" margin-left:25px;">
+            <form class="form-inline">
+                <div class="form-group">
+                  <select class="selectpicker" multiple data-selected-text-format="count > 2">
+                    <option>매매</option>
+                    <option>랜트</option>
+                    <option>서블랫</option>
+                    <option>룸매이트</option>
+                  </select>
+                  <select class="selectpicker" multiple data-selected-text-format="count > 2">
+                    <option>스튜디오</option>
+                    <option>1 배드룸</option>
+                    <option>2 배드룸</option>
+                    <option>3 배드룸</option>
+                  </select>
+                  <select class="selectpicker" multiple data-selected-text-format="count > 2">
+                    <option>$0~</option>
+                    <option>$1000~</option>
+                    <option>$2000~</option>
+                    <option>$3000~</option>
+                  </select>
+                  <button class="btn btn-default" type="submit">적용</button>
+                </div>
+              </form>
 
-      <!-- third row(filter+list+map) -->
-      <div class="row">
-        <hr/>
-        <div class="col-md-2"></div>
-
-
-        <div class="col-md-8">
-
-
-          <div class="col-md-7">
-            <!-- filter position -->
-            <div class="row"><%- include('../house/housingBar.ejs'); %><hr/></div>
-            <!-- list position -->
-            <div class="row"></div>
           </div>
+          <div class="row" style=" margin-left:10px;">
+            <hr/>
+            <%- include('../parts/houseSampleList.ejs'); %>
+            <%- include('../parts/houseSampleList.ejs'); %>
 
-           <!-- map position -->
-          <div class="col-md-5"></div>
+          </div>
         </div>
-
-
-        <div class="col-md-2"></div>
+        <div class="col-md-5"><div id="map"></div></div>
       </div>
 
-      <!-- fourth row(bottom) -->
+      <!-- Fourth Row (jobList) -->
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8"></div>
-        <div class="col-md-2"></div>
       </div>
 
-    </div>
   </body>
 </html>

@@ -11,5 +11,8 @@ module.exports = function(app)
 	 app.get('/recomend',function(req,res){
 		 res.render('main/recomend');
 	});
+	app.get('/test',function(req,res){
+		res.render('main/test');
+	});
 
 }
