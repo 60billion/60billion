@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <%- include('../parts/bootstrap.ejs'); %>
+    <%- include('../parts/css.ejs'); %>
+    <%- include('../parts/js.ejs'); %>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <!-- first row -->
+      <div class="row"><%- include('../parts/top1.ejs'); %></div>
+
+      <!-- Second Row(profile) -->
+      <div class="row" style="margin-top:70px;">
+        <div class="col-md-8 col-md-offset-2">
+          <h2>회원정보</h2>
+          <hr/>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="http://localhost:3000/img/profile.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">아이디: 60billion</h4>
+                <p>이메일: 60billions@gmail.com <a href="">수정</a></p>
+                <p>이름: Hyun Cho <a href="">수정</a></p>
+                <p>거주지역: Aurora ave N, Seattle WA 98109 <a href="">수정</a></p>
+                <p>관심지역: Upper east side nyc, NY 00000 <a href="">수정</a></p>
+              </div>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+
+      </div>
+
+      <!-- third row (nav&register) -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <a href="/register" class="btn btn-success btn pull-right" role="button" style="margin-top:20px;">서비스 등록하기</a>
+          <h2>저장&활동 정보</h2>
+          <hr/>
+          <ul class="nav nav-tabs">
+            <li role="presentation"><a href="/savedHouse">숙소</a></li>
+            <li role="presentation"><a href="/savedJob">구인구직</a></li>
+            <li role="presentation"><a href="/savedSale">사고팔기</a></li>
+            <li role="presentation" class="active"><a href="/savedInfo">정보공유</a></li>
+            <li role="presentation"><a href="/chat">채팅 내역</a></li>
+          </ul>
+          <%- include('../parts/infoSampleList.ejs'); %>
+
+        </div>
+      </div>
+
+      <!-- last row(bottom) -->
+      <div class="row" id="bottom"></div>
+  </body>
+</html>

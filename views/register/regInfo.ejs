@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <%- include('../parts/bootstrap.ejs'); %>
+    <%- include('../parts/css.ejs'); %>
+    <%- include('../parts/js.ejs'); %>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <!-- first row -->
+      <div class="row"><%- include('../parts/top1.ejs'); %></div>
+
+      <!-- Second Row(profile) -->
+      <div class="row" style="margin-top:70px; margin-bottom:100px;">
+        <div class="col-md-8 col-md-offset-2">
+        <h2>서비스 등록하기</h2>
+        <hr/>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="/register">숙소 등록</a></li>
+          <li role="presentation"><a href="/regJob">구인구직 등록</a></li>
+          <li role="presentation"><a href="/regSale">사고팔기 등록</a></li>
+          <li role="presentation" class="active"><a href="/regInfo">정보공유 등록</a></li>
+        </ul>
+        <br>
+        <h3>질문등록하기</h3>
+
+          <!-- 기본정보 업로드 -->
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>[STEP2] 기본정보</strong> <small>입력란을 모두 채워줄수록 많은 사람들이 볼수 있어요</small></div>
+              <div class="panel-body">
+                <form action="">
+                  <label for="exampleInputName2"><strong>숙소구분</strong></label>
+                  <div class="form-group">
+                    <select class="selectpicker">
+                      <option>매매</option>
+                      <option>랜트</option>
+                      <option>서블랫</option>
+                      <option>룸매이트</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName2"><strong>제목</strong></label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="ex.NYC BroadWay 근처 1배드룸 랜트합니다.">
+                  </div>
+                  <label for="exampleInputName2"><strong>주소</strong></label>
+                  <div class="form-inline">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="건물넘버,거리주소">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="도시이름">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="우편번호">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="exampleInputName2"><strong>연락받을 정보</strong></label>
+                  </div>
+                  <div class="form-group">
+                    <select class="selectpicker">
+                      <option>전화</option>
+                      <option>문자</option>
+                      <option>메신저</option>
+                      <option>채팅</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="ex)010-0000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName2"><strong>상세내용</strong></label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-success">등록하기</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <!-- /기본정보 업로드 -->
+
+
+
+
+        </div>
+      </div>
+
+
+      <!-- last row(bottom) -->
+      <div class="row" id="bottom"></div>
+  </body>
+</html>
