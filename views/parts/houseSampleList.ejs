@@ -4,11 +4,18 @@
     <div class="col-sm-5 col-md-3">
       <!-- thumbnail에 모달 적용 -->
       <div class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-lg1">
-        <img src="http://localhost:3000/img/apt/apt1.jpg" alt="atp1">
+        <!-- 이미지위에버튼 -->
+        <div class="imgw">
+          <img src="http://localhost:3000/img/apt/apt1.jpg" alt="atp1">
+          <div class="imgb">
+            <a href="#" class="btn btn-success btn-sm pull-right" role="button" style="background: #60B078;">save</a>
+          </div>
+        </div>
+        <!-- thumbnail 밑에 본문 -->
         <div class="caption">
           <h3>Gergeous Brand New Apartment</h3>
           <p>아파트 전체, 침대 1개</p>
-          <p>$130.00/day</p>
+          <p>$130.00/day  </p>
         </div>
       </div>
       <!-- 모달 적용 내용 -->
@@ -76,14 +83,14 @@
 
 
 
-      
+
       <!-- thumbnail에 모달 적용 -->
       <div class="thumbnail" data-toggle="modal" data-target=".bs-example-modal-lg2">
         <img src="http://localhost:3000/img/apt/apt2.jpg" alt="atp2">
         <div class="caption">
           <h3>Gergeous Brand New Apartment</h3>
           <p>아파트 전체, 침대 1개</p>
-          <p>$130.00/day</p>
+          <p>$130.00/day<a href="#" class="btn btn-success btn-sm pull-right" role="button" style="background: #60B078;">save</a></p>
         </div>
       </div>
       <!-- 모달 적용 내용 -->
@@ -117,7 +124,7 @@
         <div class="caption">
           <h3>Gergeous Brand New Apartment</h3>
           <p>아파트 전체, 침대 1개</p>
-          <p>$130.00/day</p>
+          <p>$130.00/day<a href="#" class="btn btn-success btn-sm pull-right" role="button" style="background: #60B078;">save</a></p>
         </div>
       </div>
       <!-- 모달 적용 내용 -->
@@ -151,29 +158,15 @@
         <div class="caption">
           <h3>Gergeous Brand New Apartment</h3>
           <p>아파트 전체, 침대 1개</p>
-          <p>$130.00/day</p>
+          <p>$130.00/day<a href="#" class="btn btn-success btn-sm pull-right" role="button" style="background: #60B078;">save</a></p>
         </div>
       </div>
       <!-- 모달 적용 내용 -->
       <div class="modal fade bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Gergeous Brand New Apartment</h4>
-            </div>
-            <div class="modal-body">
-              <img src="http://localhost:3000/img/apt/apt6.jpg" alt="atp2">
-              <h3>Gergeous Brand New Apartment</h3>
-              <p>아파트 전체, 침대 1개</p>
-              <p>$130.00/day</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Save</button>
-              <button type="button" class="btn btn-primary">Share</button>
-              <button type="button" class="btn btn-primary">NewTab</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            <!-- 모달컨텐츠내용 -->
+            <%- include('../house/houseView.ejs'); %>
           </div>
         </div>
       </div>
