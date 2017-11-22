@@ -16,14 +16,16 @@
   <div class="container-fluid">
     <div class="row">
 
-    <!-- fancybox를 이용한 이미지 -->
+    <!-- gallery와 fancybox를 이용한 이미지 -->
     <div class="carousel slide article-slide" id="article-photo-carousel"> <!-- 아이디값에 css 캐로셀과 릴레이티브 설정함 -->
         <!-- Wrapper for slides -->
         <div class="carousel-inner cont-slider">
 
           <div class="item active">
+            <!-- fancybox 로직 -->
             <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt1.jpg">
               <img class="img-responsive" src="http://localhost:3000/img/apt/apt1.jpg"></a>
+            <!-- /fancybox 로직 -->
           </div>
           <div class="item">
             <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt2.jpg">
@@ -85,7 +87,8 @@
             <li class="list-group-item"><strong>숙소구분:</strong> 렌트</li>
             <li class="list-group-item"><strong>주소:</strong> <p>aurora ave north, Seattle, WA 98109</p></li>
             <li class="list-group-item"><strong>연락처:</strong> 60billions@gmail.com</li>
-            <li class="list-group-item"><a class="btn btn-success" style="background: #60B078; width:230px;" href="#" role="button">채팅하기</a></li>
+            <li class="list-group-item"><a class="btn btn-success" style="background: #60B078; width:230px;" href="#" role="button"><strong>채팅하기</strong></a></li>
+            <!-- 회원정보 -->
             <li class="list-group-item">
               <div class="media">
               <div class="media-left media-middle">
@@ -116,52 +119,51 @@
 
     <div class="row">
       <!-- 본문 -->
-      <div class="panel panel-default">
-        <div class="panel-heading"><strong>상세정보</strong></div>
-        <div class="panel-body">
-          NJ Transit 버스정류장, Hmart fresh, 중국집, Rite aid, 세탁소, BBQ치킨 등 걸어서 2분이내에 갈 수 있는 좋은 위치에 1베드룸 아파트 입니다. 맨하탄으로 출근하시는 분들은 NJ transit 버스 타고 가셔도 되고, 업타운 쪽으로 가시는 분들은 조지워싱턴 다리쪽으로 가시면 훨씬 빠르게 출퇴근 하실수 있습니다. 조지워싱턴다리 버스터미널 가는 작은 버스도 집앞에서 바로 타실수 있습니다.
 
-          유틸은 모두 포함이고, 인터넷만 설치하시면 됩니다. 여름에 에어컨, 겨울에 히팅 시원하고 따뜻하게 잘 지냈습니다.
+        <h3><strong>상세정보</strong></h3>
 
-          24시간 로비에 컨시어지 서비스를 제공하고 있고요, 다들 모두 친절합니다.
-          상주하는 수퍼가 있고, 청소해주시는 분들도 아주 친절하고 아파트를 아주 깨끗하게 관리하고 있습니다.
+          <p>NJ Transit 버스정류장, Hmart fresh, 중국집, Rite aid, 세탁소, BBQ치킨 등 걸어서 2분이내에 갈 수 있는 좋은 위치에 1베드룸 아파트 입니다.</p>
 
-          집 앞에 포트리 커뮤니티 센터에서는 각종 운동프로그램 제공을 하고 있고 그앞에 공원에서는 주기적으로 영화프로그램이나 크리스마스나 할리데이에 재밌는 이벤트를 많이 하고 있습니다.
+          <p>맨하탄으로 출근하시는 분들은 NJ transit 버스 타고 가셔도 되고, </p>
 
-          아주 조용하고 깨끗하고 안전한 동네이고, 펠팍이나 포트리 메인 스트릿도 가까이에 있어서 한인 마트나 병원 영화 등 편리하게 이용하실수 있습니다.
+          <p>업타운 쪽으로 가시는 분들은 조지워싱턴 다리쪽으로 가시면 훨씬 빠르게 출퇴근 하실수 있습니다. </p>
 
-          집 보러 오고 싶으신분들은 언제든지 연락주세요!
-        </div>
-      </div>
+          <p>조지워싱턴다리 버스터미널 가는 작은 버스도 집앞에서 바로 타실수 있습니다.</p>
+
+          <p>유틸은 모두 포함이고, 인터넷만 설치하시면 됩니다. 여름에 에어컨, 겨울에 히팅 시원하고 따뜻하게 잘 지냈습니다.</p>
+
+          <p>24시간 로비에 컨시어지 서비스를 제공하고 있고요, 다들 모두 친절합니다.</p>
+          <p>상주하는 수퍼가 있고, 청소해주시는 분들도 아주 친절하고 아파트를 아주 깨끗하게 관리하고 있습니다.</p>
+
+          <p>집 앞에 포트리 커뮤니티 센터에서는 각종 운동프로그램 제공을 하고 있고 그앞에 공원에서는 </p>
+          <p>주기적으로 영화프로그램이나 크리스마스나 할리데이에 재밌는 이벤트를 많이 하고 있습니다.</p>
+
+          <p>아주 조용하고 깨끗하고 안전한 동네이고, 펠팍이나 포트리 메인 스트릿도 가까이에 있어서 한인 마트나 병원 영화 등 편리하게 이용하실수 있습니다.</p>
+
+          <p>집 보러 오고 싶으신분들은 언제든지 연락주세요!</p>
+
+
     </div>
 
     <div class="row">
-      <div class="panel panel-default">
-        <div class="panel-heading"><strong>지도</strong></div>
-        <div class="panel-body">
+        <h3><strong>지도</strong></h3>
           <!-- 지도 -->
           <div id="map1"></div>
-        </div>
-      </div>
     </div>
 
 
     <div class="row" >
-      <div class="panel panel-default">
-        <div class="panel-heading"><strong>관련 숙소 리스트</strong></div>
-        <div class="panel-body">
+        <h3><strong>관련 숙소 리스트</strong></h3>
           <!-- 관련리스트 -->
           <%- include('../parts/houseSampleList1.ejs'); %>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
 
-<div class="modal-footer">
-  <a class="btn btn-success" style="background: #60B078;" href="#" role="button">저장하기</a>
-  <a class="btn btn-success" style="background: #60B078;" href="#" role="button">공유하기</a>
-  <a class="btn btn-success" style="background: #60B078;" href="#" role="button">새창열기</a>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<div class="modal-footer" style="background-color:#60B078;">
+  <a class="btn btn-success" style="background: #60B078;" href="#" role="button"><strong>저장하기</strong></a>
+  <a class="btn btn-success" style="background: #60B078;" href="#" role="button"><strong>공유하기</strong></a>
+  <a class="btn btn-success" style="background: #60B078;" href="#" role="button"><strong>새창열기</strong></a>
+  <button type="button" class="btn btn-success" style="background: #60B078;" data-dismiss="modal"><strong>창닫기</strong></button>
 </div>

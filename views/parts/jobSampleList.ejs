@@ -90,29 +90,16 @@
     <div class="modal fade bs-example-modal-lgas1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Gergeous Brand New Apartment</h4>
-          </div>
-          <div class="modal-body">
-            <img src="http://localhost:3000/img/apt/apt1.jpg" alt="atp2">
-            <h3>로앤컴퍼니 (LawTalk)</h3>
-            <p>법률과 인공지능 Technology을 통해 법률 서비스의 새로운 패러다임을 만듭니다. </p>
-            <p>[경력] 로톡(LawTalk) 웹 백엔드/프론트엔드 개발자 모십니다!4,000 - 6,000만원 / 경력</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-primary">Share</button>
-            <button type="button" class="btn btn-primary">NewTab</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          <!-- 모달컨텐츠내용 -->
+          <%- include('../job/jobView.ejs'); %>
         </div>
       </div>
     </div>
 
 
 
-    <li class="list-group-item">
+    <!-- list에 모달 적용 info 예시 -->
+    <li class="list-group-item" data-toggle="modal" data-target=".bs-example-modal-lgas0">
       <div class="media">
       <div class="media-left media-middle">
         <a href="#">
@@ -126,6 +113,23 @@
       </div>
       </div>
     </li>
+    <!-- 모달 적용 내용 -->
+    <div class="modal fade bs-example-modal-lgas0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- 모달컨텐츠내용 -->
+          <%- include('../info/infoView.ejs'); %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
     <li class="list-group-item">
       <div class="media">
       <div class="media-left media-middle">
