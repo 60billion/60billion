@@ -8,9 +8,9 @@ module.exports = function(app)
 	app.get('/regSale',function(req,res){
 	 res.render('register/regSale');
  });
-	// app.get('/new',function(req,res){
-	// 	res.render('new');
-	// });
+	app.get('/saleViewTab',function(req,res){
+		res.render('sale/saleViewTab');
+	});
 	// app.get('/list',function(req,res){
 	// 	res.render('list');
 	// });

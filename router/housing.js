@@ -8,4 +8,7 @@ module.exports = function(app)
 	app.get('/register',function(req,res){
 		res.render('register/register');
 	});
+	app.get('/houseViewTab',function(req,res){
+		res.render('house/houseViewTab');
+	});
 }

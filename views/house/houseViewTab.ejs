@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <%- include('../parts/bootstrap.ejs'); %>
+    <%- include('../parts/css.ejs'); %>
+    <%- include('../parts/js.ejs'); %>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <!-- first row -->
+      <div class="row"><%- include('../parts/top1.ejs'); %></div>
+
+      <div class="row" style="margin-top:70px;">
+        <div class="col-md-8 col-md-offset-2">
+
+          <div class="header" style="background-color:#60B078; padding:7px; margin-bottom:7px;">
+            <div class="pull-right" >
+              <div class="btn-group" style="margin-right:15px;">
+                <a class="btn btn-success" style="background: #60B078;" href="#" role="button"><strong>저장하기</strong></a>
+                <a class="btn btn-success" style="background: #60B078;" href="#" role="button"><strong>공유하기</strong></a>
+              </div>
+            </div>
+            <!-- 그래픽아이콘첨 -->
+            <h3 class="modal-title" id="myModalLabel" style="color:#ffffff; margin-top:0px;"><i class="glyphicon glyphicon-home"></i> Gergeous Brand New Apartment</h3>
+          </div>
+
+          <div class="body">
+            <div class="container-fluid">
+              <div class="row">
+
+              <!-- gallery와 fancybox를 이용한 이미지 -->
+              <div class="carousel slide article-slide" id="article-photo-carousel"> <!-- 아이디값에 css 캐로셀과 릴레이티브 설정함 -->
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner cont-slider">
+
+                    <div class="item active">
+                      <!-- fancybox 로직 -->
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt1.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt1.jpg"></a>
+                      <!-- /fancybox 로직 -->
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt2.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt2.jpg"></a>
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt3.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt3.jpg"></a>
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt4.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt4.jpg"></a>
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt5.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt5.jpg"></a>
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt6.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt6.jpg"></a>
+                    </div>
+                    <div class="item">
+                      <a data-fancybox="gallery" href="http://localhost:3000/img/apt/apt7.jpg">
+                        <img class="img-responsive" src="http://localhost:3000/img/apt/apt7.jpg"></a>
+                    </div>
+                  </div>
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt1.jpg">
+                    </li>
+                    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt2.jpg">
+                    </li>
+                    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt3.jpg">
+                    </li>
+                    <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt4.jpg">
+                    </li>
+                    <li class="" data-slide-to="4" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt5.jpg">
+                    </li>
+                    <li class="" data-slide-to="5" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt6.jpg">
+                    </li>
+                    <li class="" data-slide-to="6" data-target="#article-photo-carousel">
+                      <img alt="" src="http://localhost:3000/img/apt/apt7.jpg">
+                    </li>
+                  </ol>
+                </div>
+
+
+                  <!-- 오른쪽으로 미뤄 내고 id 값에 css 적용해서 이미지 위로 올림 -->
+                  <div class="pull-right" id="up">
+                    <ul class="list-group" style="width:320px;"> <!-- 가로 길이를 설정함 -->
+                      <li class="list-group-item"><strong>기본정보</strong></li>
+                      <li class="list-group-item"><strong>Gergeous Brand New Apartment</strong></li>
+                      <li class="list-group-item"><strong>숙소구분:</strong> 렌트</li>
+                      <li class="list-group-item"><strong>주소:</strong> <p>aurora ave north, Seattle, WA 98109</p></li>
+                      <li class="list-group-item"><strong>연락처:</strong> 60billions@gmail.com</li>
+                      <li class="list-group-item"><a class="btn btn-success" style="background: #60B078; width:230px;" href="#" role="button"><strong>채팅하기</strong></a></li>
+                      <!-- 회원정보 -->
+                      <li class="list-group-item">
+                        <div class="media">
+                        <div class="media-left media-middle">
+                          <a href="#">
+                            <img class="media-object" src="http://localhost:3000/img/profile1.png" alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">아이디: 60billion</h4>
+                          <p></p>
+                          <p>상태:우수회원입니다.</p>
+                          <p>이름: Hyun Cho</p>
+                        </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+              <div class="row">
+                <!-- 본문 -->
+
+                  <h3><strong>상세정보</strong></h3>
+
+                    <p>NJ Transit 버스정류장, Hmart fresh, 중국집, Rite aid, 세탁소, BBQ치킨 등 걸어서 2분이내에 갈 수 있는 좋은 위치에 1베드룸 아파트 입니다.</p>
+
+                    <p>맨하탄으로 출근하시는 분들은 NJ transit 버스 타고 가셔도 되고, </p>
+
+                    <p>업타운 쪽으로 가시는 분들은 조지워싱턴 다리쪽으로 가시면 훨씬 빠르게 출퇴근 하실수 있습니다. </p>
+
+                    <p>조지워싱턴다리 버스터미널 가는 작은 버스도 집앞에서 바로 타실수 있습니다.</p>
+
+                    <p>유틸은 모두 포함이고, 인터넷만 설치하시면 됩니다. 여름에 에어컨, 겨울에 히팅 시원하고 따뜻하게 잘 지냈습니다.</p>
+
+                    <p>24시간 로비에 컨시어지 서비스를 제공하고 있고요, 다들 모두 친절합니다.</p>
+                    <p>상주하는 수퍼가 있고, 청소해주시는 분들도 아주 친절하고 아파트를 아주 깨끗하게 관리하고 있습니다.</p>
+
+                    <p>집 앞에 포트리 커뮤니티 센터에서는 각종 운동프로그램 제공을 하고 있고 그앞에 공원에서는 </p>
+                    <p>주기적으로 영화프로그램이나 크리스마스나 할리데이에 재밌는 이벤트를 많이 하고 있습니다.</p>
+
+                    <p>아주 조용하고 깨끗하고 안전한 동네이고, 펠팍이나 포트리 메인 스트릿도 가까이에 있어서 한인 마트나 병원 영화 등 편리하게 이용하실수 있습니다.</p>
+
+                    <p>집 보러 오고 싶으신분들은 언제든지 연락주세요!</p>
+
+
+              </div>
+
+              <div class="row">
+                  <h3><strong>지도</strong></h3>
+                    <!-- 지도 -->
+                    <div id="map1"></div>
+              </div>
+
+
+              <div class="row" >
+                  <h3><strong>관련 숙소 리스트</strong></h3>
+                    <!-- 관련리스트 -->
+                    <%- include('../house/houseSampleList1.ejs'); %>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- last row(bottom) -->
+      <div class="row" id="bottom"></div>
+
+  </body>
+</html>
