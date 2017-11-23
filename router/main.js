@@ -38,6 +38,15 @@ module.exports = function(app)
 	app.get('/test',function(req,res){
 		res.render('main/test');
 	});
+	// app.post('/test',function(req,res){
+	// 	var query = req.body['names[]']
+	// 	console.log(query);
+	// 	res.send(query);
+	// })
+	app.post('/getJson', function (req, res) {
+    // If it's not showing up, just use req.body to see what is actually being passed.
+    console.log(req.body.selectpicker);
+});
 
 
 }
