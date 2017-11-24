@@ -10,7 +10,13 @@
 
   </head>
   <body>
-    <!-- <form id="tableForm" action="/getJson" method="post">
+    <!-- <form class="" action="/test" method="post">
+      <input type="text" name="hello" value="">
+      <input type="submit" name="" value="submit">
+    </form> -->
+
+    <!-- 샐랙트 사용법 -->
+    <form id="tableForm" action="/test" method="post">
         <select class="selectpicker" data-style="btn-info" name="selectpicker">
             <optgroup label="Select Table">
                 <option name="" value="0">Select table</option>
@@ -20,9 +26,9 @@
             </optgroup>
         </select>
         <input type="submit" />
-    </form> -->
+    </form>
 
-    <form action="#" method="post" id="demoForm" class="demoForm">
+    <!-- <form action="/test" method="post" id="demoForm" class="demoForm">
 
         <fieldset>
             <legend>Demo: Get Value or Text of Selected Option</legend>
@@ -45,7 +51,7 @@
             <p>
                 <input type="button" id="showVal" value="Value Property" />
                 <input type="button" id="showTxt" value="selectedIndex/Text" />
-                <!-- <input type="button" id="doLoop" value="Value from Loop" /> -->
+
             </p>
 
         </fieldset>
@@ -57,6 +63,11 @@
           var sel = document.getElementById('scripts');
           var el = document.getElementById('display');
 
+          document.getElementById('showTxt').onclick = function () {
+
+          }
+
+
           // assign onclick handlers to the buttons
           document.getElementById('showVal').onclick = function () {
               el.value = sel.value;
@@ -65,11 +76,14 @@
           document.getElementById('showTxt').onclick = function () {
               // access text property of selected option
               el.value = sel.options[sel.selectedIndex].text;
+              // console.log(sel);
+              //console.log(sel.options);
+              // console.log(sel.selectedIndex);
           }
 
       }());
 
-    </script>
+    </script> -->
 
   </body>
 </html>
